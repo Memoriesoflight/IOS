@@ -23,17 +23,17 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <div class="bar bar-header">
+      <div class="bar bar-header bar-dark">
   <button class="button icon ion-navicon"></button>
-  <h1 class="title">Home</h1>
-  <button class="button"> <a class="tab-item" href="#">
+  <h1 class="title">HOME</h1>
+  <button class="button"> 
         <i class="ion-funnel"></i>
         Filter
-      </a>
+    
     </button>
 </div>      
-    </ion-header-bar>
-      <ion-content>
+    </ion-header-bar><br><br>
+      <div class="item item-divider">
       <div class="list card">
 
   <div class="item item-avatar">
@@ -43,6 +43,7 @@
    <p><h2>Facebook</h2>March 27, 2015 65% <i class="ion-arrow-up-c"></i></p>
   </div>
   </div>
+
 <div class="card">
   <div class="item item-text-wrap">
     <button class="button button-clear button-positive">
@@ -68,19 +69,23 @@
   </div>
 </div>
 
-  
+  </div>
 
   </div>
-  <div class="item tabs tabs-secondary tabs-icon-left">
-    <div class="bar bar-footer">
-  <div class="button-bar">
-  <a class="button ion-clipboard">Portfolio</a>
- <a class="button ion-stats-bars">Holdings</a>
-  <a class="button ion-document-text">Transaction</a>
-</div>
-  </div>
-</div>
-      </ion-content>
-    </ion-pane>
+  <div class="tabs tabs-icon-top">
+              <a class="tab-item">
+                <i class="icon ion-clipboard"></i>
+                Portfolio
+              </a>
+              <a class="tab-item">
+                <i class="icon ion-stats-bars"></i>
+                Holdings
+              </a>
+              <a class="tab-item">
+                <i class="icon ion-document-text"></i>
+                Transactions
+              </a>
+              </div>
+          </ion-pane>
   </body>
 </html>
