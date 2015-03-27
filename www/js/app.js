@@ -18,10 +18,6 @@ angular.module('starter', ['ionic'])
   });
 })
 
-
-<!-- button click -->
-angular.module('starter', ['ionic'])
-
 .controller('PlaylistsCtrl', function($scope, $ionicPopup, $timeout) {
   $scope.data = {}
 
@@ -39,3 +35,10 @@ angular.module('starter', ['ionic'])
 });
 
 
+angular.module('ionicApp', ['ionic'])
+
+.controller('SlideController', function($scope) {
+  
+  $scope.myActiveSlide = 1;
+  
+})

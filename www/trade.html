@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/drawer.css">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/drawer.js"></script>
+
+
+  </head>
+
+  <body >
+<div ng-app="ionicApp" animation="slide-left-right-ios7" ng-controller="SlideController">
+<ion-slide-box active-slide="myActiveSlide">
+  <ion-slide>
+    <div class="box blue">
+        <div class="item item-divider">
+         <label class="item item-input card">
+           <b>Add to Favorites : </b>
+         </label>
+         <button class="button button-dark" >
+          Create Alert
+        </button>
+         </div>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box yellow">
+      <div class="item item-divider">
+         <label class="item item-input card">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" placeholder="Search">
+        </label>
+      </div>
+    </div>
+
+      <div class="item item-divider">
+      <div class="list card">
+      <div class="card">
+      <div class="row">
+        <div class="col">
+          <b>Company name :</b>
+          <p> $ 71.8 </p>
+        </div>
+        <div class="col">
+          <b>Industry :</b>
+          <p>0.27% - 0.37%</p>
+        </div>
+      </div>
+       <div class="row">
+        <div class="col">
+          <b>Market Cop :</b>
+          <p>76536562 </p>
+        </div>
+        <div class="col">
+          <b>Players Takeup</p></b>
+          <p>5</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+
+
+  </ion-slide>
+  <ion-slide>
+    <div class="box">
+      <div class="item item-divider">
+        <div class="list card">  
+        <div class="row">
+        <div class="col">
+        <b>Company Name : </b>
+        <p>Google</p>
+        </div>
+        <div class="col">
+        <b>Price Share</b>
+        <p>$1000</p>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="list">
+        <div class="item range range-positive">
+          <i class="icon ion-ios7-sunny-outline"></i>
+          <input type="range" name="volume" min="0" max="100" value="33">
+          <i class="icon ion-ios7-sunny"></i>
+        </div>
+      </div>
+       <button class="button button-dark" >
+          Buy
+      </button>
+    </div>
+  </ion-slide>
+</ion-slide-box>
+  
+  </body>
+</html>
