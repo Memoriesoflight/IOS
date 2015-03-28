@@ -51,18 +51,16 @@
 
 
   </head>
-<ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">
-  <div style="width: 5000px; height: 5000px;">
-      <body ng-app="starter">
+  <body ng-app="starter">
+  <ion-nav-view>
+  </ion-nav-view>
   <ion-side-menus>
-  <!-- Center content -->
-  <ion-nav-bar class="bar-positive nav-title-slide-ios7 has-tabs-top">
-    <ion-nav-buttons side="left">
-      <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
-      </button>
-   </ion-nav-buttons>
-
-    </ion-nav-bar>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7 has-tabs-top">
+          <ion-nav-buttons side="left">
+            <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
+            </button>
+          </ion-nav-buttons>
+         </ion-nav-bar>
      <div class="bar bar-header bar-dark ">
         <h1 class="title "><b>Company Name</b></h1>
         <button class="button "><i class="ion-star"></i>
@@ -105,45 +103,47 @@
         <ion-item ><b>About</b></ion-item>
       </ion-list>
   </drawer>
- <br><br> <br><br>
+  <br><br> <br><br>
+       <div class="item item-divider">
+       <ion-scroll zooming="true" direction="y" style=" height:auto">
+        <div style="height:auto">
+       <div class="item item-divider">
+                            <div class="list card">
+                              <div class="item item-avatar">
+                                 
+                                 <center><h2><b>$75.39<i class="icon ion-arrow-up-c"></h2></b></i></center>
+                                 
+                              </div>
+                            </div>
+                  
+                                  <div class="list card">
+                                      <div class="item item-body">
+                                      <center><img src="img/1.jpg"></img></center>
 
-
- <div class="item item-divider">
- <ion-scroll zooming="true" direction="y" style=" height:auto">
-  <div style=" height: 500px;">
- <div class="item item-divider">
-      <div class="list card">
-        <div class="item item-avatar">
-           
-           <center><h2><b>$75.39<i class="icon ion-arrow-up-c"></h2></b></i></center>
-           
+                                              <div class="card">
+                                                <div class="item item-text-wrap">
+                                                          <div class="range">
+                                                           <i class="icon ion-arrow-down-a"></i>Day Low
+                                                           <input type="range" name="volume">
+                                                           <i class="icon ion-arrow-up-a"></i>Day High
+                                                          </div>
+                                                         <div class="range">
+                                                           <i class="icon ion-arrow-down-a"></i>All Time Low
+                                                           <input type="range" name="volume">
+                                                           <i class="icon ion-arrow-up-a"></i>All Time High
+                                                          </div><br><br>
+                                                        <div class="row">
+                                                          <div class="col"><b>Market Capital</b></div>
+                                                           <div class="col"><b>$2.5B</b></div>
+                                                        </div>
+                                                </div>
+                                              </div>
+                                         </div>
+                                    </div>
+          </div>
         </div>
+      </ion-scroll>
       </div>
-            
-        <div class="list card">
-            <div class="item item-body">
-            <center><img src="img/1.jpg"></img></center>
-
-            <div class="card">
-              <div class="item item-text-wrap">
-                        <div class="range">
-                         <i class="icon ion-arrow-down-a"></i>Day Low
-                         <input type="range" name="volume">
-                         <i class="icon ion-arrow-up-a"></i>Day High
-               </div>
-
-                          <div class="range">
-                         <i class="icon ion-arrow-down-a"></i>All Time Low
-                         <input type="range" name="volume">
-                         <i class="icon ion-arrow-up-a"></i>All Time High
-                          </div><br><br>
-<div class="row">
-                <div class="col"><b>Market Capital</b></div>
-                 <div class="col"><b>$2.5B</b></div>
-                 </div>
-              </div>
-            </div>
-</div></div></p></div></div></div></div></p></h2></div></div></div>
 
 
       <div class="tabs tabs-icon-top ">
@@ -160,13 +160,9 @@
                 News
               </a>
       </div>
-</ion-side-menus>
-<BR><BR><BR><BR>
-</ion-pane>
+  </ion-side-menus>
+   </ion-pane>
 </body></head>
-</div>
- </ion-scroll>
-
 </html>
 </ion-slide>
   <ion-slide>
