@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-app="starter">
+    <ion-side-menus enable-menu-with-back-views="false">
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-dark">
+<br><br>
+
+<div class="item item-divider">
+        <div class="card">
+          <div class="item item-divider">
+            <div class="row"><b>Latest News</b></div>
+                
+           </div>
+                 <div class="item item-text-wrap">
+                     <div class="row"><b>Ramshackle San Francisco home sells for $1.2 million</b></div>
+                     <div class="row">By Daniel Goldstein March 28, 2015, 12:17 p.m. EST</div>
+                     <div class="row">Location trumps condition in the red-hot Bay Area real-estate market.</div>
+                     <div class="row"><a href="www.google.com">Full Story</a></div>
+                     </div> 
+                    <div class="item item-text-wrap">
+                     <div class="row"><b>Ramshackle San Francisco home sells for $1.2 million</b></div>
+                     <div class="row">By Daniel Goldstein March 28, 2015, 12:17 p.m. EST</div>
+                     <div class="row">Location trumps condition in the red-hot Bay Area real-estate market.</div>
+                     <div class="row"><a href="www.google.com">Full Story</a></div>
+                 </div>
+                 <div class="item item-text-wrap">
+                  <div class="row"><b>Ramshackle San Francisco home sells for $1.2 million</b></div>
+                     <div class="row">By Daniel Goldstein March 28, 2015, 12:17 p.m. EST</div>
+                     <div class="row">Location trumps condition in the red-hot Bay Area real-estate market.</div>
+                     <div class="row"><a href="www.google.com">Full Story</a></div>
+                 </div>
+          </div>
+        </div>  
+ </div>
+           </div>
+
+
+                <ion-nav-back-button>
+                </ion-nav-back-button>
+
+                <ion-nav-buttons side="left">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                    </button>
+                </ion-nav-buttons>
+
+                <ion-nav-title>
+                    <h1 class="title">Company Name</h1>
+                </ion-nav-title>
+
+                <ion-nav-buttons side="right">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+                    </button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+
+            <ion-nav-view name="menuContent"></ion-nav-view>
+        </ion-side-menu-content>
+
+        <ion-side-menu side="left">
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">Left Menu</h1>
+            </ion-header-bar>
+            <ion-content>
+                <ul class="list">
+                    <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
+                    <a href="#/event/home" class="item" menu-close>Home</a>
+                    <a href="#/event/feed" class="item" menu-close>My Feed</a>
+                    <a href="#/event/trade" class="item" menu-close>Trade</a>
+                    <a href="#/event/ranking" class="item" menu-close>Ranking</a>
+                    <a href="#/event/setting" class="item" menu-close>Account Setting</a>
+                    <a href="#/event/about" class="item" menu-close>About</a>
+                </ul>
+            </ion-content>
+        </ion-side-menu>
+
+        <ion-side-menu side="right">
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">right Menu</h1>
+            </ion-header-bar>
+            <ion-content>
+                <ul class="list">
+                    <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
+                    <a href="#/event/check-in" class="item" menu-close>Check-in</a>
+                    <a href="#/event/attendees" class="item" menu-close>Attendees</a>
+                </ul>
+            </ion-content>
+        </ion-side-menu>
+
+    </ion-side-menus>
+
+    <ion-content direction="y">
+    </ion-content>
+       <ion-footer-bar align-title="center">
+        <div class="button-bar ">
+        
+            <a class="button bar-dark ">Overview</a>
+            <a class="button bar-dark ">Profile</a>
+            <a class="button bar-dark ">News</a>
+        </div>
+    </ion-footer-bar>
+
+</body>
+
+</html>
