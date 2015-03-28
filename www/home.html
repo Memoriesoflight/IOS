@@ -10,7 +10,8 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet"> -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -20,6 +21,27 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+
+    <!-- hide/show -->
+   <script language="javascript"> 
+      <!--
+      var state = 'none';
+
+      function showhide(layer_ref) {
+      state = 'block'; 
+      if (document.all) { 
+      eval( "document.all." + layer_ref + ".style.display = state"); 
+      } 
+      if (document.layers) { 
+      document.layers[layer_ref].display = state; 
+      } 
+      if (document.getElementById &&!document.all) { 
+      hza = document.getElementById(layer_ref); 
+      hza.style.display = state; 
+      } 
+      } 
+      //--> 
+      </script> 
 </head>
 
 <body ng-app="starter">
@@ -29,10 +51,14 @@
             <ion-nav-bar class="bar-dark">
                 <ion-nav-back-button>
                 </ion-nav-back-button>
- <ion-scroll zooming="true" direction="y" style=" height:600px">
+ <ion-scroll zooming="true" direction="y" style=" height:auto">
         <div style="height:auto">
 
-                <!--portfolio -->
+
+
+<!--portfolio -->
+
+<div id="portfolio" >
   <br><br><br><br><div class="item item-divider">
       <div class="list card">
         <div class="item item-avatar">
@@ -88,12 +114,11 @@
               </div>
             </div>
 </div></div></p></div></div></div></div></p></h2></div></div></div>
-
+</div>
 
 
 <!-- holdings-->
-
-
+<div id="holdings" style="display: none;">
  <br><br>
                         <div class="item item-divider">
                         <div class="list card">
@@ -128,9 +153,12 @@
                     </div>
                     </div>
 
+</div>
+
 
 <!--transactions -->
 
+<div id="transactions" style="display: none;">
 <div class="item item-divider">
       <div class="card">
          <div class="item item-text-wrap">
@@ -188,6 +216,9 @@
            </div>
            </ion-scroll>
 
+</div>
+
+
 
 <!-- bar -->
                 <ion-nav-buttons side="left">
@@ -244,12 +275,15 @@
     <ion-content direction="y">
     </ion-content>
     <ion-footer-bar align-title="center">
-        <div class="button-bar ">
-            <a class="button bar-assertive ">First</a>
-            <a class="button bar-assertive ">Second</a>
-            <a class="button bar-assertive ">Third</a>
+     <button onclick="showhide('holdings');">Holdings</button>
+     <button onclick="showhide('transactions');">Transaction</button>
+         <div class="button-bar ">
+            <a class="button">First</a>
+            <a class="button">Second</a>
+            <a class="button">Third</a>
         </div>
     </ion-footer-bar>
 
 </body>
+
 </html>
