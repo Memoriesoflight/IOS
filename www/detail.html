@@ -2,6 +2,28 @@
   <ion-slide>
 <!DOCTYPE html>
 <html>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+          <title></title>
+          <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+          <link href="css/style.css" rel="stylesheet">
+          <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="css/drawer.css">
+          <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+          <script src="lib/ionic/js/ionic.bundle.js"></script>
+          <script src="cordova.js"></script>
+          <script src="js/app.js"></script>
+          <script src="js/drawer.js"></script>
+        </head>
+
+      <body ng-app="starter">
+               <ion-pane>
+                <ion-nav-view>
+          </ion-nav-view>
+          <ion-side-menus>
+  <!-- Center content -->
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -29,7 +51,9 @@
 
 
   </head>
-  <body ng-app="starter">
+<ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">
+  <div style="width: 5000px; height: 5000px;">
+      <body ng-app="starter">
   <ion-side-menus>
   <!-- Center content -->
   <ion-nav-bar class="bar-positive nav-title-slide-ios7 has-tabs-top">
@@ -82,6 +106,11 @@
       </ion-list>
   </drawer>
  <br><br> <br><br>
+
+
+ <div class="item item-divider">
+ <ion-scroll zooming="true" direction="y" style=" height:auto">
+  <div style=" height: 500px;">
  <div class="item item-divider">
       <div class="list card">
         <div class="item item-avatar">
@@ -135,69 +164,301 @@
 <BR><BR><BR><BR>
 </ion-pane>
 </body></head>
+</div>
+ </ion-scroll>
+
 </html>
 </ion-slide>
   <ion-slide>
-            <!DOCTYPE html>
-            <html>
-              <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-                <title></title>
+                                        <!DOCTYPE html>
+                            <html>
+                              <head>
+                                <meta charset="utf-8">
+                                <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+                                <title></title>
 
-                <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-                <link href="css/style.css" rel="stylesheet">
+                                <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+                                <link href="css/style.css" rel="stylesheet">
 
-                <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-                <link href="css/ionic.app.css" rel="stylesheet">
-                -->
+                                <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+                                <link href="css/ionic.app.css" rel="stylesheet">
+                                -->
 
-                <!-- ionic/angularjs js -->
-                <script src="lib/ionic/js/ionic.bundle.js"></script>
+                                <!-- ionic/angularjs js -->
+                                <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-                <!-- cordova script (this will be a 404 during development) -->
-                <script src="cordova.js"></script>
-                <!-- your app's js -->
-                <script src="js/app.js"></script>
-              </head>
-              <body ng-app="starter">
+                                <!-- cordova script (this will be a 404 during development) -->
+                                <script src="cordova.js"></script>
+                                <!-- your app's js -->
+                                <script src="js/app.js"></script>
+                                <script src="js/Dropdown.js"></script>
+                              </head>
+                              <body ng-app="starter">
 
-                <ion-pane>
-                      <div class="bar bar-header bar-dark ">
-                        <button class="button icon ion-chevron-left"></button>
-                  <h1 class="title "><b>Facebook</b></h1>
-                  <button class="button icon ion-android-star"></button>
-                  </button>
+                                <ion-pane>
+                                      <div class="bar bar-header bar-dark ">
+                                        <button class="button icon ion-chevron-left"></button>
+                                  <h1 class="title "><b>Facebook</b></h1>
+                                  <button class="button "><i class="ion-star"></i>
+                        </button>
+                                </div>
+                                  </ion-header-bar>
+                                  <ion-content>
+                                  <br>
+                                  <br>
+                                  
+                  <div class="card">
+                    <b>Valuation<b>
+                          <div class="item item-divider">
+                            
+
+                  <div class="row">
+                                <div class="col">P/E Current</div>
+                                 <div class="col">1.63</div>
+                                        <div class="col">P/E Ratio 
+                                         </div>
+                                         <div class="col">1.68</div>
+                                     </div>
+                                       <div class="row">
+                                        <div class="col">Price to Sales Ratio</div>
+                                         <div class="col">0.65</div>
+                                        <div class="col">Price to Book Ratio
                 </div>
+                                         <div class="col">1.13</div>
+                                     </div>
+                                      <div class="row">
+                                        <div class="col">Enterprise Value to EBITDA</div>
+                                         <div class="col">29.30</div>
+                                        <div class="col">Enterprise Value to Sales</div>
+                                         <div class="col">1.48</div>
+                                     </div>
+                                   
+                </div>
+<<<<<<< HEAD
+                               
+                  <div class="card">
+                    <b>Profitability<b>
+                          <div class="item item-divider">
+                            
+
+                  <div class="row">
+                                <div class="col">Gross Margin</div>
+                                 <div class="col">17.37</div>
+                                        <div class="col">Operating Margin
+
+                                         </div>
+                                         <div class="col">5.23</div>
+                                     </div>
+                                       <div class="row">
+                                        <div class="col">Pretax Margin
+                </div>
+                                         <div class="col">3.95</div>
+                                     
+                                        <div class="col">Net Margin
+
+                </div>
+                                         <div class="col">38.14</div>
+                                     </div>
+                                      <div class="row">
+                                        <div class="col">Return on Assets</div>
+                                         <div class="col">22.53</div>
+                                        <div class="col">Return on Equity
+                </div>
+                                         <div class="col">85.90</div>
+                                     </div>
+                                   
+                </div>
+                <div class="card">
+                    <b>At a Glance<b>
+                          <div class="item item-divider">
+                            
+
+                  <div class="row">
+                                <div class="col">Phone
+        </div>
+                                 <div class="col">13102314000</div>
+                                        <div class="col">Revenue
+
+
+                                         </div>
+                                         <div class="col">5.23</div>
+                                     </div>
+                                       <div class="row">
+                                        <div class="col">Industry
+
+                </div>
+                                         <div class="col">Home Construction</div>
+                                     
+                                        <div class="col">Net Margin
+
+                </div>
+                                         <div class="col">$915.66M</div>
+                                     </div>
+                                      <div class="row">
+                                        <div class="col">Sector
+        </div>
+                                         <div class="col">Consumer Goods</div>
+                                        <div class="col">2014 Sales Growth
+
+
+                </div>
+                                         <div class="col">14.5%</div>
+                                     </div>
+                                     <div class="row">
+                                        <div class="col">Fiscal Year-end
+
+        </div>
+                                         <div class="col">11/2015</div>
+                                        <div class="col">Employees
+
+
+                </div>
+                                         <div class="col">1,590</div>
+                                     </div>
+                      <div class="card">
+                    <b>At a Glance<b>
+                          <div class="item item-divider">
+                            
+
+                  
+                                    <img src="img/profile.gif  "></img>
+
+                </div>
+     
+  <div class="card">
+            <div class="item item-divider">
+              <div class="row">
+                  <div class="col"><b>Name</b></div>
+                   <div class="col"><b>Age</b></div>
+                    <div class="col"><b>Officer Since</b></div>
+                     <div class="col"><b>Title</b></div>
+               </div>
+             </div>
+                   <div class="item item-text-wrap">
+                       <div class="row">
+                          <div class="col">Mr. Steven F</div>
+                           <div class="col">70</div>
+                            <div class="col">2007</div>
+                             <div class="col">Executive Chairman</div>
+                       </div>  
+
+                    <div class="row">
+                          <div class="col">T. Mezger</div>
+                           <div class="col">50</div>
+                            <div class="col">1993</div>
+                             <div class="col">President</div>
+                                                   </div>
+                     
+
+                    <div class="row">
+                          <div class="col"> Kaminski</div>
+                           <div class="col">25</div>
+                            <div class="col">2010</div>
+                             <div class="col">Financial Officer</div>
+                                   </div>
+                        </div>
+                    </div>  
+            </div>
+             </div>
+
+                </div>
+                                  </ion-content>
+                                  <br><br>
+                            </ion-pane>
+
+                                  <div class="tabs tabs-icon-top ">
+                              <a href="detail.html" class="tab-item">
+                                <i class="icon ion-social-instagram"></i>
+                                Overview
+                              </a>
+                              <a href="profile.html" class="tab-item">
+                                <i class="icon ion-person"></i>
+                                Profile
+                              </a>
+                              <a href="news.html" class="tab-item">
+                                <i class="icon ion-compose"></i>
+                                News
+                              </a>
+                      </div>
+                              </body>
+                            </html>   
+=======
                   </ion-header-bar>
                   <ion-content>
                   <br>
                   <br>
-                  <div class="card">
-  <div class="item item-text-wrap">
-    This is a basic Card which contains an item that has wrapping text.
-  </div>
-</div>
-<div class="card">
-  <div class="item item-text-wrap">
-    This is a basic Card which contains an item that has wrapping text.
-  </div>
-</div>
-<div class="card">
-  <div class="item item-text-wrap">
-    This is a basic Card which contains an item that has wrapping text.
-  </div>
-</div>
-<div class="card">
-  <div class="item item-text-wrap">
-    This is a basic Card which contains an item that has wrapping text.
-  </div>
-</div>
-<div class="card">
-  <div class="item item-text-wrap">
-    This is a basic Card which contains an item that has wrapping text.
-  </div>
-</div>
+                  <div class="item item-text-wrap">
+                    <div class="row">
+                      <div class="col">
+                         <ion-list >
+                          </label>
+                         <ion-item ><b>Home</b></ion-item>
+                          <ion-item ><b>My Feed</b></ion-item>
+                          <ion-item ><b>Trade</b></ion-item>
+                          <ion-item ><b>Rankings</b></ion-item>
+                          <ion-item ><b>Account Settings</b></ion-item>
+                          <ion-item ><b>About</b></ion-item>
+                        </ion-list>
+                      </div>
+                      <div class="col">
+                         <ion-list >
+                          </label>
+                         <ion-item ><b>Home</b></ion-item>
+                          <ion-item ><b>My Feed</b></ion-item>
+                          <ion-item ><b>Trade</b></ion-item>
+                          <ion-item ><b>Rankings</b></ion-item>
+                          <ion-item ><b>Account Settings</b></ion-item>
+                          <ion-item ><b>About</b></ion-item>
+                        </ion-list>
+                      </div>
+                    </div>
+                    </div>
+                
+                <div class="item item-text-wrap">
+                  <div class="row">
+                    <div class="col">
+                         <ion-list >
+                          </label>
+                         <ion-item ><b>Home</b></ion-item>
+                          <ion-item ><b>My Feed</b></ion-item>
+                          <ion-item ><b>Trade</b></ion-item>
+                          <ion-item ><b>Rankings</b></ion-item>
+                          <ion-item ><b>Account Settings</b></ion-item>
+                          <ion-item ><b>About</b></ion-item>
+                        </ion-list>
+                      </div>
+                      <div class="col">
+                         <ion-list >
+                          </label>
+                         <ion-item ><b>Home</b></ion-item>
+                          <ion-item ><b>My Feed</b></ion-item>
+                          <ion-item ><b>Trade</b></ion-item>
+                          <ion-item ><b>Rankings</b></ion-item>
+                          <ion-item ><b>Account Settings</b></ion-item>
+                          <ion-item ><b>About</b></ion-item>
+                        </ion-list>
+                      </div>
+                    </div>
+                <div class="card">
+                  <div class="item item-text-wrap">
+                    This is a basic Card which contains an item that has wrapping text.
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-text-wrap">
+                    This is a basic Card which contains an item that has wrapping text.
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-text-wrap">
+                    This is a basic Card which contains an item that has wrapping text.
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-text-wrap">
+                    This is a basic Card which contains an item that has wrapping text.
+                  </div>
+                </div>
                   </ion-content>
                   <br><br>
             </ion-pane>
@@ -218,6 +479,8 @@
       </div>
               </body>
             </html>   
+
+
             </ion-slide>
             </ion-slide-box>
 
