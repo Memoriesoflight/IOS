@@ -23,7 +23,39 @@
           </ion-nav-view>
           <ion-side-menus>
   <!-- Center content -->
-  
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/drawer.css">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/drawer.js"></script>
+
+
+  </head>
+<ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">
+  <div style="width: 5000px; height: 5000px;">
+      <body ng-app="starter">
+  <ion-side-menus>
+  <!-- Center content -->
   <ion-nav-bar class="bar-positive nav-title-slide-ios7 has-tabs-top">
     <ion-nav-buttons side="left">
       <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
@@ -31,7 +63,6 @@
    </ion-nav-buttons>
 
     </ion-nav-bar>
-     
      <div class="bar bar-header bar-dark ">
         <h1 class="title "><b>Company Name</b></h1>
         <button class="button "><i class="ion-star"></i>
@@ -76,9 +107,11 @@
   </drawer>
  <br><br> <br><br>
 
+
  <div class="item item-divider">
  <ion-scroll zooming="true" direction="y" style=" height:auto">
   <div style=" height: 500px;">
+ <div class="item item-divider">
       <div class="list card">
         <div class="item item-avatar">
            
@@ -172,6 +205,7 @@
                   <ion-content>
                   <br>
                   <br>
+
                   <div class="card">
   <div class="item item-text-wrap">
     This is a basic Card which contains an item that has wrapping text.
@@ -182,6 +216,12 @@
     This is a basic Card which contains an item that has wrapping text.
   </div>
 </div>
+
+                <div class="card">
+                  <div class="item item-text-wrap">
+                    This is a basic Card which contains an item that has wrapping text.
+                  </div>
+                </div>
 <div class="card">
   <div class="item item-text-wrap">
     This is a basic Card which contains an item that has wrapping text.
