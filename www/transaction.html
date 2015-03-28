@@ -20,18 +20,69 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/drawer.js"></script>
   </head>
   <body ng-app="starter">
         <ion-pane>
-           <ion-header-bar class="bar bar-header bar-dark">
-              <button class="button icon ion-navicon"></button>
-              
-             
-                  <h1 class="title">HOME</h1>
-               <button class="button"><i class="ion-funnel"></i>
-               Filter
-               </button>
-           </ion-header-bar>
+           <ion-side-menus>
+  <!-- Center content -->
+  <ion-nav-bar class="bar-positive nav-title-slide-ios7 has-tabs-top">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
+      </button>
+   </ion-nav-buttons>
+
+    </ion-nav-bar>
+
+     <div class="bar bar-header bar-dark ">
+        <h1 class="title "><b>HOME</b></h1>
+        <button class="button "><i class="ion-funnel"></i>
+            Filter
+        </button>
+      </div>
+
+  <ion-side-menu-content>
+        <ion-content>
+
+        </ion-content>
+
+  </ion-side-menu-content>
+
+
+  <!-- Left menu -->
+  <drawer side="left">  
+      <ion-nav-bar  class="bar-stable nav-title-slide-ios7 has-tabs-top"> 
+        <ion-nav-buttons side="left">
+          <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
+          </button>
+        </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-view title="Menu">
+          <ion-content>
+
+          </ion-content>
+
+        </ion-view><br><br>
+        <ion-list>
+        <div class="row">
+            <div class="col col-80">
+                <label class="item item-input card">
+                <input type="text" placeholder="Search">
+                </label>
+            </div>
+            <div class="col col-20">
+                <i class="icon ion-star"></i>
+            </div>
+        </div>
+        <ion-item ><b>Home</b></ion-item>
+        <ion-item ><b>My Feed</b></ion-item>
+        <ion-item ><b>Trade</b></ion-item>
+        <ion-item ><b>Rankings</b></ion-item>
+        <ion-item ><b>Account Settings</b></ion-item>
+        <ion-item ><b>About</b></ion-item>
+      </ion-list>
+  </drawer>      
+
 
                
            
