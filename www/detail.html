@@ -1,161 +1,197 @@
 <ion-slide-box on-slide-changed="slideHasChanged($index)">
-  <ion-slide>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <ion-slide>
+        <!DOCTYPE html>
+        <html>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/drawer.css">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+            <title></title>
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+            <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
+            <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="css/drawer.css">
+
+            <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
-    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+            <script src="lib/ionic/js/ionic.bundle.min.js"></script>
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+            <!-- ionic/angularjs js -->
+            <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+            <!-- cordova script (this will be a 404 during development) -->
+            <script src="cordova.js"></script>
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-    <script src="js/drawer.js"></script>
-
-
-  </head>
-<ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">
-  <div style="width: 5000px; height: 5000px;">
-      <body ng-app="starter">
-  <ion-side-menus>
-  <!-- Center content -->
-  <ion-nav-bar class="bar-positive nav-title-slide-ios7 has-tabs-top">
-    <ion-nav-buttons side="left">
-      <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
-      </button>
-   </ion-nav-buttons>
-
-    </ion-nav-bar>
-     <div class="bar bar-header bar-dark ">
-        <h1 class="title "><b>Company Name</b></h1>
-        <button class="button "><i class="ion-star"></i>
-        </button>
-      </div>
-
-  <ion-side-menu-content>
-        <ion-content>
-
-        </ion-content>
-
-  </ion-side-menu-content>
+            <!-- your app's js -->
+            <script src="js/app.js"></script>
+            <script src="js/drawer.js"></script>
 
 
-  <!-- Left menu -->
-  <drawer side="left">  
-      <ion-nav-bar  class="bar-stable nav-title-slide-ios7 has-tabs-top"> 
-        <ion-nav-buttons side="left">
-          <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
-          </button>
-        </ion-nav-buttons>
-        </ion-nav-bar>
-        <ion-view title="Menu">
-          <ion-content>
+        </head>
+        <ion-scroll zooming="true" direction="y">
+            <div>
 
-          </ion-content>
+                <body ng-app="starter">
+                    <ion-side-menus>
+                        <!-- Center content -->
+                        <ion-nav-bar class="bar-positive nav-title-slide-ios7 has-tabs-top">
+                            <ion-nav-buttons side="left">
+                                <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
+                                </button>
+                            </ion-nav-buttons>
 
-        </ion-view><br><br>
-        <ion-list >
-        <label class="item item-input card">
-          <i class="icon ion-search placeholder-icon"></i>
-          <input type="search" placeholder="Search">
-        </label>
-        
-        <ion-item ><b>Home</b></ion-item>
-        <ion-item ><b>My Feed</b></ion-item>
-        <ion-item ><b>Trade</b></ion-item>
-        <ion-item ><b>Rankings</b></ion-item>
-        <ion-item ><b>Account Settings</b></ion-item>
-        <ion-item ><b>About</b></ion-item>
-      </ion-list>
-  </drawer>
- <br><br> <br><br>
- <div class="item item-divider">
-      <div class="list card">
-        <div class="item item-avatar">
-           
-           <center><h2><b>$75.39<i class="icon ion-arrow-up-c"></h2></b></i></center>
-           
-        </div>
-      </div>
-            
-        <div class="list card">
-            <div class="item item-body">
-            <center><img src="img/1.jpg"></img></center>
+                        </ion-nav-bar>
+                        <div class="bar bar-header bar-dark ">
+                            <h1 class="title "><b>Company Name</b></h1>
+                            <button class="button "><i class="ion-star"></i>
+                            </button>
+                        </div>
 
-            <div class="card">
-              <div class="item item-text-wrap">
-                        <div class="range">
-                         <i class="icon ion-arrow-down-a"></i>Day Low
-                         <input type="range" name="volume">
-                         <i class="icon ion-arrow-up-a"></i>Day High
-               </div>
+                        <ion-side-menu-content>
+                            <ion-content>
 
-                          <div class="range">
-                         <i class="icon ion-arrow-down-a"></i>All Time Low
-                         <input type="range" name="volume">
-                         <i class="icon ion-arrow-up-a"></i>All Time High
-                          </div><br><br>
-<div class="row">
-                <div class="col"><b>Market Capital</b></div>
-                 <div class="col"><b>$2.5B</b></div>
-                 </div>
-              </div>
+                            </ion-content>
+
+                        </ion-side-menu-content>
+
+
+                        <!-- Left menu -->
+                        <drawer side="left">
+                            <ion-nav-bar class="bar-stable nav-title-slide-ios7 has-tabs-top">
+                                <ion-nav-buttons side="left">
+                                    <button class="button button-icon icon ion-navicon" ng-click="toggleDrawer()">
+                                    </button>
+                                </ion-nav-buttons>
+                            </ion-nav-bar>
+                            <ion-view title="Menu">
+                                <ion-content>
+
+                                </ion-content>
+
+                            </ion-view>
+                            <br>
+                            <br>
+                            <ion-list>
+                                <label class="item item-input card">
+                                    <i class="icon ion-search placeholder-icon"></i>
+                                    <input type="search" placeholder="Search">
+                                </label>
+
+                                <ion-item><b>Home</b>
+                                </ion-item>
+                                <ion-item><b>My Feed</b>
+                                </ion-item>
+                                <ion-item><b>Trade</b>
+                                </ion-item>
+                                <ion-item><b>Rankings</b>
+                                </ion-item>
+                                <ion-item><b>Account Settings</b>
+                                </ion-item>
+                                <ion-item><b>About</b>
+                                </ion-item>
+                            </ion-list>
+                        </drawer>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="item item-divider">
+                            <div class="list card">
+                                <div class="item item-avatar">
+
+                                    <center>
+                                        <h2><b>$75.39<i class="icon ion-arrow-up-c"></h2>
+                                        </b>
+                                        </i>
+                                    </center>
+
+                                </div>
+                            </div>
+
+                            <div class="list card">
+                                <div class="item item-body">
+                                    <center><img src="img/1.jpg"></img>
+                                    </center>
+
+                                    <div class="card">
+                                        <div class="item item-text-wrap">
+                                            <div class="range">
+                                                <i class="icon ion-arrow-down-a"></i>Day Low
+                                                <input type="range" name="volume">
+                                                <i class="icon ion-arrow-up-a"></i>Day High
+                                            </div>
+
+                                            <div class="range">
+                                                <i class="icon ion-arrow-down-a"></i>All Time Low
+                                                <input type="range" name="volume">
+                                                <i class="icon ion-arrow-up-a"></i>All Time High
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col"><b>Market Capital</b>
+                                                </div>
+                                                <div class="col"><b>$2.5B</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
             </div>
-</div></div></p></div></div></div></div></p></h2></div></div></div>
+            </div>
+            </div>
+            </p>
+            </h2>
+            </div>
+            </div>
+            </div>
 
 
-      <div class="tabs tabs-icon-top ">
-              <a href="detail.html" class="tab-item">
-                <i class="icon ion-social-instagram"></i>
-                Overview
-              </a>
-              <a href="profile.html" class="tab-item">
-                <i class="icon ion-person"></i>
-                Profile
-              </a>
-              <a href="news.html" class="tab-item">
-                <i class="icon ion-compose"></i>
-                News
-              </a>
-      </div>
-</ion-side-menus>
-<BR><BR><BR><BR>
-</ion-pane>
-</body></head>
-</div>
- </ion-scroll>
+            <div class="tabs tabs-icon-top ">
+                <a href="detail.html" class="tab-item">
+                    <i class="icon ion-social-instagram"></i> Overview
+                </a>
+                <a href="profile.html" class="tab-item">
+                    <i class="icon ion-person"></i> Profile
+                </a>
+                <a href="news.html" class="tab-item">
+                    <i class="icon ion-compose"></i> News
+                </a>
+            </div>
+            </ion-side-menus>
+            <BR>
+            <BR>
+            <BR>
+            <BR>
+            </ion-pane>
+            </body>
+            </head>
+            </div>
+        </ion-scroll>
 
-</html>
-</ion-slide>
-  <ion-slide>
-            <!DOCTYPE html>
-            <html>
-              <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-                <title></title>
+        </html>
+    </ion-slide>
+    <ion-slide>
+        <!DOCTYPE html>
+        <html>
 
-                <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-                <link href="css/style.css" rel="stylesheet">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+            <title></title>
 
-                <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+            <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
+
+            <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
                 <link href="css/ionic.app.css" rel="stylesheet">
                 -->
+
 
                 <!-- ionic/angularjs js -->
                 <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -253,26 +289,70 @@
                   </ion-content>
                   <br><br>
             </ion-pane>
+>>>>>>> origin/master
 
-                  <div class="tabs tabs-icon-top ">
-              <a href="detail.html" class="tab-item">
-                <i class="icon ion-social-instagram"></i>
-                Overview
-              </a>
-              <a href="profile.html" class="tab-item">
-                <i class="icon ion-person"></i>
-                Profile
-              </a>
-              <a href="news.html" class="tab-item">
-                <i class="icon ion-compose"></i>
-                News
-              </a>
-      </div>
-              </body>
-            </html>   
-            </ion-slide>
-            </ion-slide-box>
+            <!-- cordova script (this will be a 404 during development) -->
+            <script src="cordova.js"></script>
+            <!-- your app's js -->
+            <script src="js/app.js"></script>
+        </head>
 
+        <body ng-app="starter">
 
+            <ion-pane>
+                <div class="bar bar-header bar-dark ">
+                    <button class="button icon ion-chevron-left"></button>
+                    <h1 class="title "><b>Facebook</b></h1>
+                    <button class="button icon ion-android-star"></button>
+                    </button>
+                </div>
+                </ion-header-bar>
+                <ion-content>
+                    <br>
+                    <br>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            This is a basic Card which contains an item that has wrapping text.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            This is a basic Card which contains an item that has wrapping text.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            This is a basic Card which contains an item that has wrapping text.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            This is a basic Card which contains an item that has wrapping text.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            This is a basic Card which contains an item that has wrapping text.
+                        </div>
+                    </div>
+                </ion-content>
+                <br>
+                <br>
+            </ion-pane>
 
+            <div class="tabs tabs-icon-top ">
+                <a href="detail.html" class="tab-item">
+                    <i class="icon ion-social-instagram"></i> Overview
+                </a>
+                <a href="profile.html" class="tab-item">
+                    <i class="icon ion-person"></i> Profile
+                </a>
+                <a href="news.html" class="tab-item">
+                    <i class="icon ion-compose"></i> News
+                </a>
+            </div>
+        </body>
 
+        </html>
+    </ion-slide>
+</ion-slide-box>
