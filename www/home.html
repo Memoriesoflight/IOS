@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -39,6 +38,7 @@
       hza = document.getElementById(layer_ref); 
       hza.style.display = state; 
       } 
+        document.getElementById(d).style.top=50;
       } 
       //--> 
       </script> 
@@ -158,7 +158,7 @@
 
 <!--transactions -->
 
-<div id="transactions" style="display: none;">
+<div id="transactions" style="display: none; position:absolute; width:100%; height:100%;">
 <div class="item item-divider">
       <div class="card">
          <div class="item item-text-wrap">
@@ -270,7 +270,6 @@
         </ion-side-menu>
 
     </ion-side-menus>
-
 
     <ion-content direction="y">
     </ion-content>
