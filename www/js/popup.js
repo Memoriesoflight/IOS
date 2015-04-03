@@ -1,17 +1,32 @@
-angular.module('starter', ['ionic'])
+angular.module('mySuperApp', ['ionic'])
+.controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
 
-.controller('PlaylistsCtrl', function($scope, $ionicPopup, $timeout) {
-  $scope.data = {}
+ // Triggered on a button click, or some other target
+ $scope.showPopup = function() {
+   $scope.data = {}
 
-  // Triggered on a button click, or some other target
-  $scope.showPopup = function() {
-    var alertPopup = $ionicPopup.alert({
-        title: 'Company Name',
-        template: 'Graph'
-      
-    });
-    alertPopup.then(function(res) {
-      console.log('Company Details');
-    });
-  };
+   // An elaborate, custom popup
+   var myPopup = $ionicPopup.show({
+     template: [
+       '<div class="row"><div class="col"><img src="img/man.jpg"></img></div><div  class="col"><input type="text" ng-model=""></div></div>',,'<input type="password" ng-model="">','<input type="password" ng-model="">',]
+     title: 'Enter Credentilal',
+     
+     scope: $scope,
+     buttons: [
+       { text: 'Cancel' },
+       {
+         text: '<b>Save</b>',
+         type: 'button-positive',
+         
+       },
+     ]
+   });
+   myPopup.then(function(res) {
+     console.log('Tapped!', res);
+   });
+   $timeout(function() {
+      myPopup.close(); 
+   }, 30000);
+     
+   };
 });
